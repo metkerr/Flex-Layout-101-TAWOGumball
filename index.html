@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout 101</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">        
+        <header>
+            <div class="logo"><img src="./img/logo.png" width="90px" alt="World of gumball logo"></div>
+            <nav class="desktop">
+                <div><a href="#">Pricing</a></div>
+                <div><a href="#">Blog</a></div>
+                <div><a href="#">Contact</a></div>
+                <div><a href="#">Sign In</a></div>
+                <div><a href="#">Sign Up</a></div>
+            </nav>
+            <nav class="mobile">
+                <div class="menuIcon" id="menuIcon" onclick="menu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="blurLayer" id="blurLayer"></div>
+                <div class="menuDrawer" id="menuDrawer">
+                    <span class="closeDrawer" onclick="closeDrawer()">X</span>
+                    <div>                        
+                        <div><a href="#">Sign Up</a></div> 
+                        <div><a href="#">Sign In</a></div>           
+                        <div><a href="#">Pricing</a></div>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Contact</a></div>
+                    </div>       
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="greeting">
+                <h3>Hello, I'm</h3>
+                <h1>Gumball Watterson</h1>
+                <p>Your lovely blue cat</p>
+                <div>
+                    <button>Get to know me</button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/gumball.png" alt="Gumball Watterson">
+            </div>
+        </section>
+        <section class="other">
+            <h4>(2ND SECTION) My Family And Friend</h4>
+            <div class="family-card">
+                <div>Darwin</div>
+                <div>Richard</div>
+                <div>Anais</div>
+                <div>Carrie</div>
+                <div>Banana</div>
+                <div>Larry</div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        function menu(){
+            document.getElementById("blurLayer").style.display = "block";
+            document.getElementById("menuDrawer").style.display = "block";
+        }
+        const closeDrawer = () => {
+            document.getElementById("menuDrawer").style.display = "none";
+            document.getElementById("blurLayer").style.display = "none";
+        }
+    </script>
+</body>
+</html>
