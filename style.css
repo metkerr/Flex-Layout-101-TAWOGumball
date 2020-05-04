@@ -334,6 +334,7 @@ h1{
 .sliderContainer{
     display: flex;
     overflow-y: auto;
+    justify-content: space-between;
 }
 
 .sliderContainer::-webkit-scrollbar{
