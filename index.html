@@ -50,16 +50,97 @@
             </div>
         </section>
         <section class="other">
-            <h4>(2ND SECTION) My Family And Friend</h4>
+            <h2>My Family And Friend</h2>
             <div class="family-card">
-                <div>Darwin</div>
-                <div>Richard</div>
-                <div>Anais</div>
-                <div>Carrie</div>
-                <div>Banana</div>
-                <div>Larry</div>
+                <div class="card">
+                    <div>
+                        <div class="cardImg" id="giveLove" style="background: url('./Img/darwin.jpeg')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3 id="titleDarwin">Darwin Watterson</h3>
+                        <p>He is my <del>pet</del> brother</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton" id="removeButton" style="display: none; max-height: 38.17px;"><button onclick="reverseRollImg()" style="background: #ed3b79;">Remove Love &#10084;</button></div>
+                    <div class="cardButton" id="giveButton"><button onclick="rollImg()">Give Love &#10084;</button></div>
+                </div>                
+                <div class="card">
+                    <div>
+                        <div class="cardImg" style="background: url('./Img/anais.jfif')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3>Anais Watterson</h3>
+                        <p>She is my little sister</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton"><button>Give Love &#10084;</button></div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardImg" style="background: url('./Img/richard.jpg')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3>Richard Watterson</h3>
+                        <p>He is my awesome dad</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton"><button>Give Love &#10084;</button></div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardImg" style="background: url('./Img/carrie.jpg')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3>Carrie Krueger</h3>
+                        <p>Flying dutchman in white</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton"><button>Give Love &#10084;</button></div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardImg" style="background: url('./Img/banana.jpg')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3>Banana Joe</h3>
+                        <p>Yellowest banana ever!</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton"><button>Give Love &#10084;</button></div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardImg" style="background: url('./Img/larry.jpg')"></div>
+                    </div>
+                    <div class="cardTitle">
+                        <h3>Larry</h3>
+                        <p>What a hard worker</p>
+                    </div>
+                    <div class="cardDesc"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, hic!</p></div>
+                    <div class="cardButton"><button>Give Love &#10084;</button></div>
+                </div>
             </div>
         </section>
+        <section id="castSlider">
+            <div class="sliderContainer">
+                <div style="background: url(./img/download.jfif);"></div>
+                <div style="background: url(./img/ThePainting5.png);"></div>
+                <div style="background: url(./img/Thesweaterspreview10.PNG.png);"></div>
+                <div style="background: url(./img/unnamed.webp);"></div>
+                <div style="background: url(./img/richard.jpg);"></div>
+                <div style="background: url(./img/larry.jpg);"></div>
+                <div style="background: url(./img/anais.jfif);"></div>
+                <div style="background: url(./img/banana.jpg);"></div>
+                <div style="background: url(./img/carrie.jpg);"></div>
+                <div style="background: url(./img/darwin.jpeg);"></div>
+                <div style="background: url(./img/gumball.png);"></div>
+                <div style="background: url(./img/ThePainting5.png);"></div>
+                <div style="background: url(./img/banana.jpg);"></div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2020 Metker - All rights reserved - #100DaysOfCode &#10084;</p>
+        </footer>
     </div>
 
     <script type="text/javascript">
@@ -70,6 +151,20 @@
         const closeDrawer = () => {
             document.getElementById("menuDrawer").style.display = "none";
             document.getElementById("blurLayer").style.display = "none";
+        }
+        const rollImg = () => {
+            document.getElementById("giveLove").style.animationName = "rollImg";
+            document.getElementById("giveLove").style.border = "solid 3px #ed3b79";
+            document.getElementById("titleDarwin").style.color = "#ed3b79";
+            document.getElementById("giveButton").style.display = "none";
+            document.getElementById("removeButton").style.display = "block";
+        }
+        const reverseRollImg = () => {
+            document.getElementById("giveLove").style.animationName = "reverseRollImg";
+            document.getElementById("giveLove").style.border = "solid 3px #4AC7E3";
+            document.getElementById("giveButton").style.display = "block";
+            document.getElementById("removeButton").style.display = "none";
+            document.getElementById("titleDarwin").style.color = "#4AC7E3";
         }
     </script>
 </body>

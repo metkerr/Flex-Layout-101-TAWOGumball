@@ -5,148 +5,7 @@
     font-family: monospace;
 }
 
-.container{
-    max-width: 85%;
-    margin: auto;
-}
-
-header{
-    display: flex;
-    height: 60px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; 
-}
-
-header .logo{
-    min-width: 100px;
-    text-align: center;
-}
-
-.logo img{
-    margin-top: 5px;
-}
-
-header nav{
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    font-weight: bold;
-    font-size: 16px;
-    min-width: 400px;
-}
-
-header nav > div{
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.desktop > div {    
-    min-width: 100px;
-}
-
-nav > div a{
-    text-decoration: none;
-    color: #333;
-}
-
-.desktop > div:last-child a{
-    padding: 5px 10px;
-    border-radius: 1.3em;
-    border: solid 2px #333;
-}
-
-
-.desktop > div:last-child a:hover{
-    border: solid 1px #333;
-}
-
-nav > div a:hover{
-    border-bottom: 2px solid #333;
-}
-
-section{
-    margin-top: 5px;
-}
-
-.hero{
-    min-width: 513px;
-    display: flex;
-    min-height: 300px;
-    justify-content: space-around;
-    border-bottom: solid 3px whitesmoke;
-    padding: 5px;
-}
-
-.hero > div{
-    min-width: 10vh;
-    display: flex;  
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-h4{
-    font-size: 15px;
-}
-
-h3{
-    color: #777;
-    font-size: 18px;
-}
-
-h1{
-    font-size: 28px;
-    color: #333;
-}
-
-.greeting button{
-    margin-top: 15px;
-    background: #4AC7E3;
-    padding: 10px 20px;
-    border: 0;
-    color: #fff;
-    font-weight: bold;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-.greeting button:hover{
-    background: rgb(58, 159, 182);
-}
-
-.greeting button:active{
-    background: rgb(46, 128, 146);
-}
-
-.hero div:nth-child(2){
-    background: rgb(172, 172, 172);
-    border-radius: 50%;
-}
-
-.hero div:nth-child(2) img{
-    width: 30vh;
-}
-
-.other{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #eee;
-    min-width: 513px;
-}
-
-.family-card{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/* mobile media query */
 
 .mobile, .menuDrawer{
     display: none;
@@ -244,4 +103,269 @@ h1{
     .closeDrawer:active{
         color: #777;
     }
+}
+
+.container{
+    width: 85%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    height: 60px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+}
+
+header .logo{
+    min-width: 100px;
+    text-align: center;
+}
+
+.logo img{
+    margin-top: 5px;
+}
+
+header nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 400px;
+}
+
+header nav > div{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop > div {    
+    min-width: 100px;
+}
+
+nav > div a{
+    text-decoration: none;
+    color: #333;
+}
+
+.desktop > div:last-child a{
+    padding: 5px 10px;
+    border-radius: 1.3em;
+    border: solid 2px #333;
+}
+
+
+.desktop > div:last-child a:hover{
+    border: solid 1px #333;
+}
+
+nav > div a:hover{
+    border-bottom: 2px solid #333;
+}
+
+section{
+    margin-top: 5px;
+}
+
+.hero{
+    min-width: 513px;
+    display: flex;
+    min-height: 30vh;
+    justify-content: space-around;
+    border-bottom: solid 3px whitesmoke;
+    padding: 5px;
+}
+
+.hero > div{
+    min-width: 10vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h4{
+    font-size: 15px;
+}
+
+h3{
+    color: #777;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 28px;
+    color: #333;
+}
+
+.greeting button{
+    margin-top: 15px;
+    background: #4AC7E3;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.greeting button:hover{
+    background: rgb(58, 159, 182);
+}
+
+.greeting button:active{
+    background: rgb(46, 128, 146);
+}
+
+.hero div:nth-child(2){
+    background: rgb(172, 172, 172);
+    border-radius: 50%;
+}
+
+.hero div:nth-child(2) img{
+    min-width: 15rem;
+    max-width: 25rem;
+    max-height: 30rem;
+    min-height: 20rem;
+}
+
+.other{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 513px;
+    padding: 20px;
+}
+
+.family-card{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.family-card > div{
+    min-width: 10vh;
+    max-width: 30vh;
+    min-height: 30vh;
+    box-shadow: 0px 3px 5px 0px #ccc;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.family-card > div:hover{    
+    box-shadow: 0px 3px 5px 0px #888;
+    transition: 0.2s;
+}
+
+.card > div{
+    margin: 3px 0px;
+    text-align: center;
+    flex-grow: 3;
+}
+
+.card > div:nth-child(2){
+    flex-grow: 2;
+}
+
+.card > div:last-child{
+    flex-grow: 1;
+}
+
+.card h3{
+    color: #4AC7E3;
+}
+
+.cardImg{
+    border-radius: 50%;
+    width: 9rem;
+    height: 8rem;
+    background-color: #ccc;
+    margin: auto;
+    background-size: cover !important;
+    border: solid 3px #4AC7E3;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+@keyframes rollImg{
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(1080deg)}
+}
+
+@keyframes reverseRollImg{
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(-1080deg)}
+}
+
+.cardButton button{
+    background: #4AC7E3;
+    padding: 5px 20px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cardButton button:hover{
+    background: rgb(58, 159, 182);
+}
+
+.cardButton button:active{
+    background: rgb(46, 128, 146);;
+}
+
+
+.sliderContainer{
+    display: flex;
+    overflow-y: auto;
+}
+
+.sliderContainer::-webkit-scrollbar{
+    height: 0.5em;
+}
+
+.sliderContainer::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sliderContainer::-webkit-scrollbar-thumb{
+    background: #4AC7E3;
+    outline: 1px solid #4AC7E3;
+}
+
+.sliderContainer::-webkit-scrollbar-button{
+    background: #ed3b79;
+}
+.sliderContainer > div{
+    margin-right: 5px;
+    background: gray;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    border: solid 3px #4AC7E3;
+    background-size: cover !important;
+}
+
+
+footer{
+    margin: 20px 0px;
+    padding-bottom: 10px;
+    color: #999;
+    text-align: center;
 }
